@@ -4,12 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="icon" href="/src/images/weather.svg" type="image/svg+xml">
 </head>
 <body>
   <div id="app">
+    <div id="date-display"></div>
+    <div id="time-display"></div>
+    <div id="weather-display"></div>
+    <div id="condition-container">
+      <img id="condition-icon" src="" alt="Weather Icon" />
+      <div id="condition-text"></div>
+    </div>
     <input type="text" id="location" placeholder="Enter location...">
     <button onclick="fetchWeather()">Get Weather</button>
-    <div id="weather-display"></div>
+    <div id="feels-like">Feels Like: </div>
+    <div id="humidity">Humidity: </div>
+    <div id="chance-of-rain">Chance of Rain: </div>
+    <div id="wind-speed">Wind Speed: </div>
   </div>
   <script defer type="module" src="./src/main.js"></script>
 </body>
