@@ -2,6 +2,7 @@
   "name": "weather-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://shawnedgell.github.io/weather-app/",
   "type": "module",
   "scripts": {
     "dev": "vite",
