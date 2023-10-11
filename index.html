@@ -7,20 +7,54 @@
   <link rel="icon" href="/src/images/weather.svg" type="image/svg+xml">
 </head>
 <body>
-  <div id="app">
-    <div id="date-display"></div>
-    <div id="time-display"></div>
-    <div id="weather-display"></div>
-    <div id="condition-container">
-      <img id="condition-icon" src="" alt="Weather Icon" />
-      <div id="condition-text"></div>
+  <div id="weather-app">
+    <div class="weather-left">
+      <div id="weather-info">
+        <h1 id="location"></h1>
+        <p id="localDate"></p>
+        <p id="localTime"></p>
+        <br>
+        <img id="weatherIcon" alt="Weather Description" class="weather-icon" />
+        <h1 id="temperature"></h1>
+        <p id="description"></p>
+        <br>
+        <div class="input-container">
+          <input type="text" id="location-input" placeholder="Enter location (city)" />
+          <button id="fetch-weather-btn">
+            <img src="./src/images/feels.svg" class="white-icon" alt="Feels Like Icon">
+          </button>
+        </div>
+        <button id="fetch-weather-btn"></button>
+        <div id="error-message" style="color: red; display: none;"></div>
+        <div id="loading" style="display: none;">Loading...</div>
+      </div>
     </div>
-    <input type="text" id="location" placeholder="Enter location...">
-    <button onclick="fetchWeather()">Get Weather</button>
-    <div id="feels-like">Feels Like: </div>
-    <div id="humidity">Humidity: </div>
-    <div id="chance-of-rain">Chance of Rain: </div>
-    <div id="wind-speed">Wind Speed: </div>
+    <div class="weather-right">
+      <div class="content-right">
+        <img src="./src/images/feels.svg" class="white-icon" alt="Feels Like Icon">
+        <p id="feelsLike"></p>
+      </div>
+      <div class="content-right">
+        <img src="./src/images/humidity.svg" class="white-icon" alt="Feels Like Icon">
+        <p id="humidity"></p>
+      </div>
+      <div class="content-right">
+        <img src="./src/images/wind.svg" class="white-icon" alt="Feels Like Icon">
+        <p id="windSpeed"></p>
+      </div>
+      <div class="content-right">
+        <img src="./src/images/rain.svg" class="white-icon" alt="Feels Like Icon">
+        <p id="chance-of-rain"></p>
+      </div>
+      <div class="content-right">
+        <img src="./src/images/snow.svg" class="white-icon" alt="Feels Like Icon">
+        <p id="chance-of-snow"></p>
+      </div>
+
+      
+      
+      
+    </div>
   </div>
   <script defer type="module" src="./src/main.js"></script>
 </body>
