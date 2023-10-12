@@ -12,12 +12,12 @@ body {
   background-attachment: fixed;
   background-position: center center; /* Center both horizontally and vertically */
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 5%;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 #weather-app {
@@ -36,16 +36,17 @@ p {
   align-items: center;
   background-color: transparent;
   border-bottom: 1px solid white; /* Add a white underline */
-  max-width: 120px;
+  max-width: 220px;
   margin: 20px 0;
 }
 
 #location-input {
   flex-grow: 1;
-  max-width: 106px;
+  max-width: 250px;
   background-color: transparent;
   color: white;
   border: none;
+  font-size: 1.1rem;
   outline: none;
 }
 
@@ -72,7 +73,7 @@ p {
 
 #loading {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .label {
@@ -110,7 +111,7 @@ p {
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-      font-size: 1.2rem; /* Scale down from the default */
+      font-size: 1.1rem; /* Scale down from the default */
   }
 
   p {
@@ -122,12 +123,16 @@ p {
   }
 
   .content-right {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
   }
 
+  .input-container {
+    max-width: 150px;
+  }
 
   #location-input {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    max-width: 150px;
   }
 }
 
@@ -146,7 +151,16 @@ p {
   }
 
   .content-right {
-    margin-bottom: 17px;
+    margin-bottom: 21px;
+  }
+
+  .input-container {
+    max-width: 115px;
+  }
+
+  #location-input {
+    font-size: 0.9rem;
+    max-width: 115px;
   }
 
   .white-icon {
