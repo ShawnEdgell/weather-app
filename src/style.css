@@ -6,13 +6,12 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-
   background-image: url('/src/images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 #weather-app {
@@ -30,16 +29,17 @@ body {
   align-items: center;
   background-color: transparent;
   border-bottom: 1px solid white; /* Add a white underline */
-  margin-right: 150px;
+  max-width: 150px;
+  margin: 20px 0;
 }
 
 #location-input {
   flex-grow: 1;
+  max-width: 150px;
   background-color: transparent;
   color: white;
   border: none;
   outline: none;
-  margin-right: 10px; /* Add some spacing between input and button */
 }
 
 #fetch-weather-btn {
@@ -49,10 +49,8 @@ body {
   cursor: pointer;
 }
 
-
 input, button {
   font-size: 18px;
-  margin: 20px 0;
 }
 
 .weather-left {
@@ -74,15 +72,32 @@ input, button {
   font-size: 1.5rem;
 }
 
-.content-right {
+.label {
   display: flex;
   align-items: center;
-  justify-content: right;
-  gap: 10px;
+  gap: 10px; /* Add spacing between icon and label text */
+}
+
+.value {
+  text-align: right; /* Right-align the value text */
 }
 
 /* Apply white color to all path elements within SVG */
 .white-icon {
   height: 25px;
-  width: 25px;;
+  width: 25px;
 }
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align content to the right */
+  margin-bottom: 10px;
+}
+
+/* Apply white color to all path elements within SVG */
+.white-icon {
+  height: 25px;
+  width: 25px;
+}
+

@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="icon" href="/src/images/weather.svg" type="image/svg+xml">
-  <script type="module" crossorigin src="/weather-app/assets/index-dd0f32b6.js"></script>
-  <link rel="stylesheet" href="/weather-app/assets/index-6cb9c6d9.css">
+  <script type="module" crossorigin src="/weather-app/assets/index-77c6431c.js"></script>
+  <link rel="stylesheet" href="/weather-app/assets/index-091af001.css">
 </head>
 <body>
   <div id="weather-app">
@@ -15,15 +15,13 @@
         <h1 id="location"></h1>
         <p id="localDate"></p>
         <p id="localTime"></p>
-        <br>
         <img id="weatherIcon" alt="Weather Description" class="weather-icon" />
         <h1 id="temperature"></h1>
         <p id="description"></p>
-        <br>
         <div class="input-container">
-          <input type="text" id="location-input" placeholder="Enter location (city)" />
+          <input type="text" id="location-input" placeholder="Enter location" />
           <button id="fetch-weather-btn">
-            <img src="/weather-app/assets/feels-b83f8a21.svg" class="white-icon" alt="Feels Like Icon">
+            <img src="/weather-app/assets/search-deb0406a.svg" class="white-icon" alt="Search Icon">
           </button>
         </div>
         <button id="fetch-weather-btn"></button>
@@ -33,29 +31,40 @@
     </div>
     <div class="weather-right">
       <div class="content-right">
-        <img src="/weather-app/assets/feels-b83f8a21.svg" class="white-icon" alt="Feels Like Icon">
-        <p id="feelsLike"></p>
+        <div class="label">
+          <img src="/weather-app/assets/feels-b83f8a21.svg" class="white-icon" alt="Feels Like Icon">
+          <p>Feels Like</p>
+        </div>
+        <h2 class="value" id="feelsLike"></h2>
       </div>
       <div class="content-right">
-        <img src="/weather-app/assets/humidity-32991878.svg" class="white-icon" alt="Feels Like Icon">
-        <p id="humidity"></p>
+        <div class="label">
+          <img src="/weather-app/assets/humidity-32991878.svg" class="white-icon" alt="Humidity Icon">
+          <p>Humidity</p>
+        </div>
+        <h2 class="value" id="humidity"></h2>
       </div>
       <div class="content-right">
-        <img src="/weather-app/assets/wind-933bf265.svg" class="white-icon" alt="Feels Like Icon">
-        <p id="windSpeed"></p>
+        <div class="label">
+          <img src="/weather-app/assets/wind-933bf265.svg" class="white-icon" alt="Wind Speed Icon">
+          <p>Wind Speed</p>
+        </div>
+        <h2 class="value" id="windSpeed"></h2>
       </div>
       <div class="content-right">
-        <img src="/weather-app/assets/rain-617300b9.svg" class="white-icon" alt="Feels Like Icon">
-        <p id="chance-of-rain"></p>
+        <div class="label">
+          <img src="/weather-app/assets/rain-617300b9.svg" class="white-icon" alt="Chance of Rain Icon">
+          <p>Chance of Rain</p>
+        </div>
+        <h2 class="value" id="chance-of-rain"></h2>
       </div>
       <div class="content-right">
-        <img src="/weather-app/assets/snow-bd0d322b.svg" class="white-icon" alt="Feels Like Icon">
-        <p id="chance-of-snow"></p>
+        <div class="label">
+          <img src="/weather-app/assets/snow-bd0d322b.svg" class="white-icon" alt="Chance of Snow Icon">
+          <p>Chance of Snow</p>
+        </div>
+        <h2 class="value" id="chance-of-snow"></h2>
       </div>
-
-      
-      
-      
     </div>
   </div>
   

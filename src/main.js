@@ -64,7 +64,6 @@ async function fetchAndDisplayWeather(location) {
     document.getElementById('loading').style.display = 'none';
 }
 
-
 function displayWeatherInfo(data) {
     document.getElementById('localDate').textContent = data.localDate;
     document.getElementById('localTime').textContent = data.localTime;
@@ -72,13 +71,13 @@ function displayWeatherInfo(data) {
     document.getElementById('description').textContent = data.description;
     document.getElementById('weatherIcon').src = data.icon;
     document.getElementById('temperature').textContent = `${data.temperature}°C`;
-    document.getElementById('feelsLike').textContent = `Feels Like: ${data.feelsLike}°C`;
-    document.getElementById('humidity').textContent = `Humidity: ${data.humidity}%`;
-    document.getElementById('windSpeed').textContent = `Wind Speed: ${data.windSpeed} kph`;
-    document.getElementById('humidity').textContent = `Humidity: ${data.humidity}%`;
-    document.getElementById('windSpeed').textContent = `Wind Speed: ${data.windSpeed} kph`;
-    document.getElementById('chance-of-rain').textContent = `Chance of Rain: ${data.chanceOfRain}`;
-    document.getElementById('chance-of-snow').textContent = `Chance of Snow: ${data.chanceOfSnow}`;
+    document.getElementById('feelsLike').textContent = `${data.feelsLike}°C`;
+    document.getElementById('humidity').textContent = `${data.humidity}%`;
+    document.getElementById('windSpeed').textContent = `${data.windSpeed} kph`;
+    document.getElementById('humidity').textContent = `${data.humidity}%`;
+    document.getElementById('windSpeed').textContent = `${data.windSpeed} kph`;
+    document.getElementById('chance-of-rain').textContent = `${data.chanceOfRain}`;
+    document.getElementById('chance-of-snow').textContent = `${data.chanceOfSnow}`;
 }
 
 function formatDate(dateString) {
@@ -109,4 +108,8 @@ document.getElementById('location-input').addEventListener('keydown', (event) =>
       // If Enter key is pressed, trigger the button click
       document.getElementById('fetch-weather-btn').click();
     }
-  });
+});
+
+window.addEventListener('load', () => {
+    fetchAndDisplayWeather();
+});
