@@ -10,8 +10,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center; /* Center both horizontally and vertically */
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding: 5%;
+}
+
+p {
+  font-size: 0.8rem;
 }
 
 #weather-app {
@@ -29,13 +35,13 @@ body {
   align-items: center;
   background-color: transparent;
   border-bottom: 1px solid white; /* Add a white underline */
-  max-width: 150px;
+  max-width: 120px;
   margin: 20px 0;
 }
 
 #location-input {
   flex-grow: 1;
-  max-width: 150px;
+  max-width: 106px;
   background-color: transparent;
   color: white;
   border: none;
@@ -47,10 +53,6 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-input, button {
-  font-size: 18px;
 }
 
 .weather-left {
@@ -75,29 +77,29 @@ input, button {
 .label {
   display: flex;
   align-items: center;
-  gap: 10px; /* Add spacing between icon and label text */
+  gap: 5px; /* Add spacing between icon and label text */
 }
 
 .value {
   text-align: right; /* Right-align the value text */
 }
 
-/* Apply white color to all path elements within SVG */
-.white-icon {
-  height: 25px;
-  width: 25px;
-}
-
 .content-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Align content to the right */
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 /* Apply white color to all path elements within SVG */
 .white-icon {
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
 }
 
+#localDate, #localTime {
+}
+
+#location {
+  margin-top: 20px;
+}
